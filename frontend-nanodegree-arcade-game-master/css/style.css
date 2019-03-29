@@ -1,0 +1,76 @@
+body {
+  text-align: center;
+  font-family:'Freckle Face', cursive;
+  color: #04c3f7;
+  background-color: indigo;
+}
+
+#title {
+  font-size: 4em;
+  margin: 0;
+  font-family: 'Miltonian', cursive;
+  color: #1cc43b;
+}
+
+#score-display {
+  font-size: 1.3em;
+}
+
+canvas, #results, #los-message, #win-message {
+  display: none;
+}
+
+#introduction, #win-message, #los-message {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.info-message {
+  text-align: center;
+}
+
+#introduction h2 {
+  text-align: center;
+}
+
+#losing-images {
+  text-align: center;
+}
+
+#winning-images {
+  text-align: center;
+}
+
+.start-button {
+  display: block;
+  background: #8934d9;
+  background-image: -webkit-linear-gradient(top, #8934d9, #2bb850);
+  background-image: -moz-linear-gradient(top, #8934d9, #2bb850);
+  background-image: -ms-linear-gradient(top, #8934d9, #2bb850);
+  background-image: -o-linear-gradient(top, #8934d9, #2bb850);
+  background-image: linear-gradient(to bottom, #8934d9, #2bb850);
+  border: solid #35d4cc 2px;
+  border-radius: 0;
+  text-shadow: 1px 1px 3px #ad21ad;
+  font-family: "Arial";
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.start-button:hover {
+  background: #3c4cfc;
+  background-image: -webkit-linear-gradient(top, #3c4cfc, #aa34d9);
+  background-image: -moz-linear-gradient(top, #3c4cfc, #aa34d9);
+  background-image: -ms-linear-gradient(top, #3c4cfc, #aa34d9);
+  background-image: -o-linear-gradient(top, #3c4cfc, #aa34d9);
+  background-image: linear-gradient(to bottom, #3c4cfc, #aa34d9);
+  text-decoration: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Effective JavaScript: Frogger</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Miltonian" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">The Arcade Game</h1>
+
+  <div id="results">
+    <div id="lives"></div>
+    <div id="score-display">Level: <span id="score">0</span>/12</div>
+  </div>
+  <canvas id="canvas"></canvas>
+  <div id="introduction">
+    <h2 class="info-message">Welcome to Arcade Game</h2>
+    <p>The object of the game is to reach the water without getting hit by enemies bugs</p>
+    <p>There are 12 levels, if you reach the 12th level you complete the game and after you can play again </p>
+    <p>Read carefully the instructions below 👇</p>
+    <ul>
+      <li>Use the arrow keys (&#8592; &#8593; &#8594; &#8595;) to move the player</li>
+      <li>You have 5 lives</li>
+      <li>The goal is to reach the water without losing all lives</li>
+      <li>If you touch a bug, you lose 1 life</li>
+      <li>If you manage to reach the water 12 times you will win the game</li>
+      <li>If you unfortunately get hit by enemy bugs for 5 times, you lose but you can restart the game to try again</li>
+      <li>Good luck and Have a lot of fun! 😉</li>
+    </ul>
+    <button class="start-button" type="button">START GAME</button>
+  </div>
+
+  <div id="los-message">
+    <h2 class="info-message">GAME OVER!</h2>
+    <div id="losing-images">
+      <img src="images/enemy-bug.png" alt="enemy"><img src="images/enemy-bug.png" alt="enemy"><img src="images/enemy-bug.png" alt="enemy"><img src="images/enemy-bug.png" alt="enemy"><img src="images/enemy-bug.png" alt="enemy">
+    </div>
+    <p>Sorry you lost all the lives. Click button 👇 to try again!</p>
+    <button class="start-button" type="button">RESTART</button>
+  </div>
+
+  <div id="win-message">
+    <h2 class="info-message">CONGRATULATIONS! YOU WON!</h2>
+    <h2 class="info-message">You reached the final level!</h2>
+    <div id="winning-images"><img src="images/logo-coppa.png" alt="cup"></div>
+    <button class="start-button" type="button">RESTART</button>
+  </div>
+
+  <script src="js/resources.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
